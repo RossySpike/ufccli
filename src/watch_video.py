@@ -29,4 +29,5 @@ result = searchVideoList(html)
 # TODO: Hacer el regex una funcion para que me sirva al momento de cambiar de nro de pag
 video_links = re.findall(r'https://mover\.uz/watch/\w+',str(result))
 print(video_links)
-playVideoMpv(video_links[0])
+# playVideoMpv(video_links[0]) No sirve porque el link va a una pagina no a un archivo de video
+# TODO: obtener el link del video de la pagina del video
